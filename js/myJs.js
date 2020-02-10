@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = "Bởi vì cậu đáng yêu vl ý :'> <3";
+    var text = " Bởi vì cậu đáng yêu vl ý :'> <3 ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -121,7 +121,7 @@ $('#yes').click(function() {
                 width: 900,
                 confirmButtonText: 'Okiiiii lun <3',
                 background: '#fff url("img/iput-bg.jpg")',
-                title: 'Tớ biết mà ^^ Yêu cậu 300.000',
+                title: 'Tớ biết mà ^^ Tớ cũng yêu cậu nhiều lắm. Vậy là từ giờ cậu là người yêu tới rồi đó. Love u',
                 text: "Mai tớ qua đón cậu đi chơi nhaaaaaaa :v Còn giờ thì chờ gì nữa mà ko inbox cho tớ đi nàoooooo",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
