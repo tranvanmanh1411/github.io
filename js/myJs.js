@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Mình đã bảo đ thích nghe nhạc rồi ";
+    var text = " Nhìn là đã muốn rụng trứng rồi <3 ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -96,7 +96,7 @@ $('#yes').click(function() {
     var audio = new Audio('sound/tick.mp3');
     audio.play();
     Swal.fire({
-        title: 'Nói cho anh biết tại sao em thích anh điiii',
+        title: 'Man Hoo đz vậy bạn có yêu không',
         html: true,
         width: 900,
         padding: '3em',
@@ -114,15 +114,15 @@ $('#yes').click(function() {
         cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
         cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Gửi cho anh <3'
+        confirmButtonText: 'Gửi cho Manhoo <3'
     }).then((result) => {
         if (result.value) {
             Swal.fire({
                 width: 900,
                 confirmButtonText: 'Okiiiii lun <3',
                 background: '#fff url("img/iput-bg.jpg")',
-                title: 'Anh biết mà ^^ Anh cũng yêu em nhiều lắm',
-                text: "Khi nào lên Hà Nội anh đón đi chơi nha nhaaaa :v Còn giờ thì chờ gì nữa mà ko inbox cho anh đi nàoo",
+                title: 'Man Hoo biết mà, cảm ơn người anh em',
+                text: "Nào, nếu bạn thích Manhoo thì còn chần chừ gì mà không inbox đi, mình chờ này =)))",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
                     window.location = 'https://www.facebook.com/tranvanmanh.hr';
