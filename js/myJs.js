@@ -14,8 +14,8 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'He luu Bae!',
-        text: 'Mặn có điều này muốn hỏi Nhun Nhun nhớ phải trả lời thật lòng nhaaa.',
+        title: 'Chào anh em!',
+        text: 'Chào mừng anh em tới địa bàn của Mạnh.',
         imageUrl: 'img/cuteCat.jpg',
         imageWidth: 300,
         imageHeight: 300,
@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Bởi vì anh đáng yêu lắm ý :'> <3 ";
+    var text = " Mình đã bảo đ thích nghe nhạc rồi ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
