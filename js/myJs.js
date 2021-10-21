@@ -14,8 +14,8 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'Chào anh em!',
-        text: 'Chào mừng anh em tới địa bàn của Mạnh.',
+        title: 'Chào bạn!',
+        text: 'Bạn có thể nêu cảm nghĩ của bạn về Manho không.',
         imageUrl: 'img/cuteCat.jpg',
         imageWidth: 300,
         imageHeight: 300,
@@ -39,7 +39,7 @@ function firstQuestion(){
     $('#yes').css("left", leftNo);
     $('#yes').css("top", topNO);
 }
-// move random button póition
+// move random button position
 function moveButton() {
     var audio = new Audio('sound/Swish1.mp3');
     audio.play();
@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Nhìn là đã muốn rụng trứng rồi <3 ";
+    var text = " Mình thấy bạn khá là đẹp trai <3 ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -96,7 +96,7 @@ $('#yes').click(function() {
     var audio = new Audio('sound/tick.mp3');
     audio.play();
     Swal.fire({
-        title: 'Man Hoo đz vậy bạn có yêu không',
+        title: 'Bạn muốn nói gì nữa à',
         html: true,
         width: 900,
         padding: '3em',
@@ -109,20 +109,20 @@ $('#yes').click(function() {
               no-repeat
             `,
         showCancelButton: true,
-        cancelButtonText: "Thôi ngại lắm :<<",
+        cancelButtonText: "Khônggg :<<",
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
         cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Gửi cho Manhoo <3'
+        confirmButtonText: 'Có >.<'
     }).then((result) => {
         if (result.value) {
             Swal.fire({
                 width: 900,
                 confirmButtonText: 'Okiiiii lun <3',
                 background: '#fff url("img/iput-bg.jpg")',
-                title: 'Man Hoo biết mà, cảm ơn người anh em',
-                text: "Nào, nếu bạn thích Manhoo thì còn chần chừ gì mà không inbox đi, mình chờ này =)))",
+                title: 'Manho biết mà, cảm ơn người bạn dễ thương',
+                text: "Mình tặng bạn 1 món quà, bạn hãy bấm vào link nhé =)))",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
                     window.location = 'https://www.facebook.com/tranvanmanh.hr';
