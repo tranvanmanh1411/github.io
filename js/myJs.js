@@ -14,8 +14,8 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'Chào bạn!',
-        text: 'Bạn có thể nêu cảm nghĩ của bạn về Manho không.',
+        title: 'Hi Mie!',
+        text: 'Em bấm vào đây anh hỏi em chút nèee.',
         imageUrl: 'img/cuteCat.jpg',
         imageWidth: 300,
         imageHeight: 300,
@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Mình thấy bạn khá là đẹp trai <3 ";
+    var text = " Em yêu anh nhất trái đất <3 ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -96,7 +96,7 @@ $('#yes').click(function() {
     var audio = new Audio('sound/tick.mp3');
     audio.play();
     Swal.fire({
-        title: 'Bạn muốn nói gì nữa à',
+        title: 'Em bé muốn chia sẻ gì hôngg',
         html: true,
         width: 900,
         padding: '3em',
@@ -109,20 +109,20 @@ $('#yes').click(function() {
               no-repeat
             `,
         showCancelButton: true,
-        cancelButtonText: "Khônggg gửi :<<",
+        cancelButtonText: "Khônggg gửi đâu :<<",
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
         cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Gửi ^^'
+        confirmButtonText: 'Gửi nè ^^'
     }).then((result) => {
         if (result.value) {
             Swal.fire({
                 width: 900,
                 confirmButtonText: 'Okiiiii lun <3',
                 background: '#fff url("img/iput-bg.jpg")',
-                title: 'Manho biết mà, cảm ơn người bạn dễ thương',
-                text: "Mình tặng bạn 1 món quà, bạn hãy bấm vào link nhé =)))",
+                title: 'Anh biết mà, yêu thế',
+                text: "Anh tặng em 1 món quà, em bé hãy bấm vào link nhé =)))",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
                     window.location = 'https://www.facebook.com/tranvanmanh.hr';
