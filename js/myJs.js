@@ -121,7 +121,7 @@ $('#yes').click(function() {
                 width: 900,
                 confirmButtonText: 'Okiiiii lun <3',
                 background: '#fff url("img/iput-bg.jpg")',
-                title: 'Anh biết mà, yêu thế',
+                title: 'Anh biết mà, yêu thế nhờ <3',
                 text: "Anh tặng em 1 món quà, em bé hãy bấm vào link nhé =)))",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
